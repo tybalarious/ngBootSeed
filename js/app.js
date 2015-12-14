@@ -20,8 +20,11 @@
                 .state("about", {
                     url: "/about",
                     templateUrl: "templates/about.html"
+                })
+                .state("todo", {
+                    url: "/todo",
+                    templateUrl: "templates/todo.html"
                 });
-
             // if none of the above states are matched, use this as the fallback
             $urlRouterProvider.otherwise("/home");
         }]);
